@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;            
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        tbody tr:nth-child(odd){    /*2n*/
+            background-color: white;            
+        }
+
+        tbody tr:nth-child(even){   /*2n-1*/
+            background-color:lightgrey;            
+        }
+
+        thead, tfoot{
+            background-color: #383838;
+            color: white;
+        }
+
+        thead tr th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--ANATOMIA PARA TABELAS GRANDES
+    TABLE
+    CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+-->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>                
+                <th scope="col" style="width: 50px ">População</th>
+            </tr>
+        </thead>
+        <tbody>
+                <td>São Paulo</td>                
+                <td class="num">45.000.000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>                
+                <td class="num">21.000.000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>                
+                <td class="num">14.000.000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>                
+                <td class="num">11.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>                
+                <td class="num">11.000.000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>                
+                <td class="num">9.000.000</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>                
+                <td class="num">9.000.000</td>
+            </tr>
+            <tr>
+                <td>Pará</td>                
+                <td class="num">8.000.000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>                
+                <td class="num">14.000.000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>                
+                <td class="num">11.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>                
+                <td class="num">11.000.000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>                
+                <td class="num">9.000.000</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>                
+                <td class="num">9.000.000</td>
+            </tr>
+            <tr>
+                <td>Pará</td>                
+                <td class="num">8.000.000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>                
+                <td class="num">14.000.000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>                
+                <td class="num">11.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>                
+                <td class="num">11.000.000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>                
+                <td class="num">9.000.000</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>                
+                <td class="num">9.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>                
+                <td class="num">7.000.000</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>                
+                <td class="num">2.000.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>210.000.000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae totam vero labore ad nulla dolorum odio illum aut eius blanditiis inventore, quaerat vel perferendis ratione natus nesciunt corrupti in unde!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ut ad excepturi deserunt tempore maiores cupiditate, quo, libero facilis atque consequuntur quis sapiente cum provident officia facere, mollitia dolores harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi perferendis, quas maxime cupiditate ab voluptatum delectus, suscipit, eveniet in nobis recusandae? Tempora consequatur porro nostrum odio labore, laudantium perferendis possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque facilis temporibus, itaque explicabo, eaque corporis illo aperiam dolores sint officiis doloribus ipsam soluta asperiores enim, quisquam expedita voluptatibus suscipit cumque.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae totam vero labore ad nulla dolorum odio illum aut eius blanditiis inventore, quaerat vel perferendis ratione natus nesciunt corrupti in unde!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ut ad excepturi deserunt tempore maiores cupiditate, quo, libero facilis atque consequuntur quis sapiente cum provident officia facere, mollitia dolores harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi perferendis, quas maxime cupiditate ab voluptatum delectus, suscipit, eveniet in nobis recusandae? Tempora consequatur porro nostrum odio labore, laudantium perferendis possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque facilis temporibus, itaque explicabo, eaque corporis illo aperiam dolores sint officiis doloribus ipsam soluta asperiores enim, quisquam expedita voluptatibus suscipit cumque.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae totam vero labore ad nulla dolorum odio illum aut eius blanditiis inventore, quaerat vel perferendis ratione natus nesciunt corrupti in unde!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ut ad excepturi deserunt tempore maiores cupiditate, quo, libero facilis atque consequuntur quis sapiente cum provident officia facere, mollitia dolores harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi perferendis, quas maxime cupiditate ab voluptatum delectus, suscipit, eveniet in nobis recusandae? Tempora consequatur porro nostrum odio labore, laudantium perferendis possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque facilis temporibus, itaque explicabo, eaque corporis illo aperiam dolores sint officiis doloribus ipsam soluta asperiores enim, quisquam expedita voluptatibus suscipit cumque.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae totam vero labore ad nulla dolorum odio illum aut eius blanditiis inventore, quaerat vel perferendis ratione natus nesciunt corrupti in unde!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ut ad excepturi deserunt tempore maiores cupiditate, quo, libero facilis atque consequuntur quis sapiente cum provident officia facere, mollitia dolores harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi perferendis, quas maxime cupiditate ab voluptatum delectus, suscipit, eveniet in nobis recusandae? Tempora consequatur porro nostrum odio labore, laudantium perferendis possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque facilis temporibus, itaque explicabo, eaque corporis illo aperiam dolores sint officiis doloribus ipsam soluta asperiores enim, quisquam expedita voluptatibus suscipit cumque.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae totam vero labore ad nulla dolorum odio illum aut eius blanditiis inventore, quaerat vel perferendis ratione natus nesciunt corrupti in unde!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ut ad excepturi deserunt tempore maiores cupiditate, quo, libero facilis atque consequuntur quis sapiente cum provident officia facere, mollitia dolores harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi perferendis, quas maxime cupiditate ab voluptatum delectus, suscipit, eveniet in nobis recusandae? Tempora consequatur porro nostrum odio labore, laudantium perferendis possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque facilis temporibus, itaque explicabo, eaque corporis illo aperiam dolores sint officiis doloribus ipsam soluta asperiores enim, quisquam expedita voluptatibus suscipit cumque.</p>
+</body>
+</html>
