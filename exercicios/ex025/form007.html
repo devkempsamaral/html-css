@@ -8,28 +8,37 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <fieldset>
-        <p>
-            <label for="iest">Estado</label>            
-            <select name="estado" id="iest">
-
-                <optgroup label="Nordeste">    
-                    <option value="SP">São Paulo</option>
-                    <option value="MG">Minas Gerais</option>
-                <option value="RJ">Rio de Janeiro</option>
-                </optgroup>
-                <option value="" selected>------Escolha------</option>
-                <optgroup label="Nordeste">    
-                    <option value="MA">Maranhão</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="RG">Rio Grande do Norte</option>
-                </optgroup>
-            </select>
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-    </fieldset> 
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <p>
+                <label for="iest">Estado</label>
+                <select name="estado" id="iest">
+                    <option value="" selected>------Escolha------</option>
+                    <optgroup label="Nordeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+        
+                    <optgroup label="Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RG">Rio Grande do Norte</option>
+                    </optgroup>
+                </select>
+            </p>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="lsdprof">
+                <datalist id="lsdprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="CONT">Contabilsta</option>
+                    <option value="DEV">Desenvolvedor</option>
+                </datalist>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
 </body>
 </html>
