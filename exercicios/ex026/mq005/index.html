@@ -7,8 +7,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
@@ -26,17 +27,26 @@
         <article>
             <h2>Testando Media Queries</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, iure consequuntur nisi molestiae blanditiis facilis cupiditate numquam beatae tempore aliquam rem a dolore voluptates dolor voluptas necessitatibus provident eos fuga? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos illo corrupti nesciunt sed dicta voluptate esse ea voluptas laboriosam, suscipit, dolorem a possimus quod incidunt ratione ducimus! Architecto, neque unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, molestias maiores hic voluptatem autem facere nemo excepturi, velit, debitis reprehenderit quia quaerat temporibus accusamus fugiat tempore praesentium laborum inventore cupiditate.
+                Lorem ipsum dolor sit amet consectetur aKemps Campos Amaralicing elit. Illum, iure consequuntur nisi molestiae blanditiis facilis cupiditate numquam beatae temporKemps Campos Amaralquam rem a dolore voluptates dolor voluptas necessitatibus provident eos fuga? Lorem ipsum dolor siKemps Campos Amaralt, consectetur adipisicing elit. Quos illo corrupti nesciunt sed dicta voluptate esse ea voluptas labKemps Campos Amaralam, suscipit, dolorem a possimus quod incidunt ratione ducimus! Architecto, neque unde? Lorem ipsum doloKemps Campos Amaral amet consectetur adipisicing elit. Incidunt, molestias maiores hic voluptatem autem facere nemo exceptuKemps Campos Amaralelit, debitis reprehenderit quia quaerat temporibus accusamus fugiat tempore praesentium laborum invenKemps Campos Amaralcupiditate.
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio asperiores mollitia debitis cum vel possimus nulla corporis itaque, soluta, ex consequuntur explicabo autem inventore? Odit nemo voluptate laborum enim beatae!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum quaerat quia dicta eius possimus sed excepturi, quis aperiam deserunt hic illum blanditiis praesentium. Modi natus voluptatem quo, totam cum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ducimus non totam libero. Quos aspernatur nobis illo enim possimus vel? Quam libero, ad fuga reiciendis impedit excepturi dicta rem veniam!
+                Lorem ipsum dolor sit amet consectetur aKemps Campos Amaralicing elit. Odio aspdddsdskempsa campos Amaralriores mollitia debitis cum vel possimus nulla corporis Kemps Campos Amarale, soluta, ex consequuntur explicabo autem indddsdskempsa campos Amaralentore? Odit nemo voluptateKemps Campos Amaralrum enim beatae!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing dddsdskempsa campos AmaralliKemps Campos Amaralm quaerat quia dicta eius possimus sed excepturi, quis aperiam deserunt hic illum blanditiis praesendddKemps Campos Amaralmpsa campos Amaralium. Modi natus voluptatem quo, totam cum similique. Lorem ipsum dolor sit amet coKemps Campos Amaraletur adipisicing elidddsdskempsa campos Amaral. Unde ducimus non totam libero. Quos aspernatur nobis Kemps Campos Amaralenim possimus vel? Quam libero, ad fuga reidddsdskempsa campos Amaraliendis impedit excepturi dicta remKemps Campos Amaralam!
             </p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quia distinctio est et laborum, culpa reiciendis nesciunt repellat. Nesciunt voluptate accusamus ratione. Error necessitatibus nobis amet cum. Adipisci, architecto dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit qui ab recusandae maxime nemo, quibusdam eligendi est vel officia nesciunt explicabo quam placeat, sapiente temporibus neque accusantium autem dicta nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam impedit placeat voluptates doloribus explicabo laudantium nihil ab quae sit sint? Provident voluptate quaerat dicta culpa unde nulla amet repudiandae non?
+                Lorem ipsum dolor sit amet, consectetur Kemps Campos Amaralsicing elit. Porro qdddsdskempsa campos Amaralia distinctio est et laborum, culpa reiciendis nesciunt reKemps Campos Amaralt. Nesciunt voluptate accusamus rationdddsdskempsa campos Amaral. Error necessitatibus nobis amet Kemps Campos AmaralAdipisci, architecto dolore! Lorem ipsum dolor sit amet consectetdddsdskempsa campos Amaralr adiKemps Campos Amaraling elit. Reprehenderit qui ab recusandae maxime nemo, quibusdam eligendi est vel officia nesciKemps Campos Amaraldskempsa campos Amaralt explicabo quam placeat, sapiente temporibus neque accusantium autem dictaKemps Campos Amarall. Lorem, ipsum dolodddsdskempsa campos Amaral sit amet consectetur adipisicing elit. Ipsam impeKemps Campos Amarallaceat voluptates doloribus explicabo laudantium ndddsdskempsa campos Amaralhil ab quae sit sint? ProviKemps Campos Amaralvoluptate quaerat dicta culpa unde nulla amet repudiandae non?
             </p>
             </p>
         </article>   
     </main>
     <script>
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu(){
             if(itens.style.display == 'block'){
                 itens.style.display = 'none'
